@@ -1,10 +1,12 @@
 import React from "react";
 import moment from "moment";
 import CheckoutProduct from "../checkoutProduct/CheckoutProduct";
-import CurrencyFormat from "react-currency-format";
+import Currency from "currency.js"; 
 import "./Order.css";
 
 const Order = ({ order }) => {
+  const orderTotal = Currency(order.data.amount * 100);
+
   return (
     <div className="order">
       <h2>Order</h2>
@@ -23,18 +25,7 @@ const Order = ({ order }) => {
           hiddenButton
         />
       ))}
-      <CurrencyFormat
-        renderText={(value) => (
-          <>
-            <h3 className="order-total">Order Total: {value}</h3>
-          </>
-        )}
-        decimalScale={2}
-        value={order.data.amount * 100}
-        displayType={"text"}
-        thousandSeparator={true}
-        prefix={"$"}
-      />
+      <h3 className="order-total">Order Total: {orderTotal.format()}</h3>
     </div>
   );
 };

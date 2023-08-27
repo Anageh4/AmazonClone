@@ -1,6 +1,6 @@
 import { CardElement, useElements, useStripe } from "@stripe/react-stripe-js";
 import { React, useEffect, useState } from "react";
-import CurrencyFormat from "react-currency-format";
+import Currency from "currency.js";
 import { Link, useNavigate } from "react-router-dom";
 import CheckoutProduct from "../checkoutProduct/CheckoutProduct";
 import axios from "../../axios";
@@ -63,6 +63,7 @@ const Payment = () => {
     setDisabled(e.empty);
     setError(error ? error.message : "");
   };
+  const orderTotal = Currency(getBasketTotal(basket));
   return (
     <div className="payment">
       <div className="payment-container">
@@ -104,14 +105,7 @@ const Payment = () => {
             <form onSubmit={handleSubmit}>
               <CardElement onChange={handleChange} />
               <div className="payment-priceContainer">
-                <CurrencyFormat
-                  renderText={(value) => <h3>Order Total : {value}</h3>}
-                  decimalScale={2}
-                  value={getBasketTotal(basket)}
-                  displayType={"text"}
-                  thousandSeparator={true}
-                  prefix={"$"}
-                />
+                <h3>Order Total : {orderTotal.format()}</h3>
                 <button
                   type="submit"
                   disabled={processing || disabled || succeeded}
