@@ -1,41 +1,38 @@
-[debug] [2023-08-27T18:42:12.585Z] ----------------------------------------------------------------------
-[debug] [2023-08-27T18:42:12.588Z] Command:       /usr/local/share/nvm/versions/node/v20.5.0/bin/node /home/codespace/nvm/current/bin/firebase emulators:start --only functions
-[debug] [2023-08-27T18:42:12.588Z] CLI Version:   12.5.2
-[debug] [2023-08-27T18:42:12.588Z] Platform:      linux
-[debug] [2023-08-27T18:42:12.588Z] Node Version:  v20.5.0
-[debug] [2023-08-27T18:42:12.589Z] Time:          Sun Aug 27 2023 18:42:12 GMT+0000 (Coordinated Universal Time)
-[debug] [2023-08-27T18:42:12.589Z] Env Overrides: GITHUB_API_URL
-[debug] [2023-08-27T18:42:12.589Z] ----------------------------------------------------------------------
+[debug] [2023-08-31T14:53:22.532Z] ----------------------------------------------------------------------
+[debug] [2023-08-31T14:53:22.534Z] Command:       /usr/local/share/nvm/versions/node/v20.5.0/bin/node /home/codespace/nvm/current/bin/firebase emulators:start --only functions
+[debug] [2023-08-31T14:53:22.535Z] CLI Version:   12.5.2
+[debug] [2023-08-31T14:53:22.535Z] Platform:      linux
+[debug] [2023-08-31T14:53:22.535Z] Node Version:  v20.5.0
+[debug] [2023-08-31T14:53:22.535Z] Time:          Thu Aug 31 2023 14:53:22 GMT+0000 (Coordinated Universal Time)
+[debug] [2023-08-31T14:53:22.535Z] Env Overrides: GITHUB_API_URL
+[debug] [2023-08-31T14:53:22.535Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2023-08-27T18:42:12.663Z] Object ".hosting" in "firebase.json" has unknown property: {"additionalProperty":"emulators"}
-[debug] [2023-08-27T18:42:12.664Z] Field ".hosting" in "firebase.json" is possibly invalid: should be array
-[debug] [2023-08-27T18:42:12.664Z] Field ".hosting" in "firebase.json" is possibly invalid: should match some schema in anyOf
-[debug] [2023-08-27T18:42:12.668Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2023-08-27T18:42:12.668Z] > authorizing via signed-in user (ahmednageh09@gmail.com)
+[debug] [2023-08-31T14:53:22.642Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2023-08-31T14:53:22.642Z] > authorizing via signed-in user (ahmednageh09@gmail.com)
 [info] i  emulators: Starting emulators: functions {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: functions"}}
-[debug] [2023-08-27T18:42:12.675Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-08-27T18:42:12.675Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
-[debug] [2023-08-27T18:42:12.693Z] [hub] writing locator at /tmp/hub-clone-5c555.json
-[debug] [2023-08-27T18:42:12.751Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-08-27T18:42:12.751Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
-[debug] [2023-08-27T18:42:12.752Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
+[debug] [2023-08-31T14:53:22.650Z] [logging] Logging Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-31T14:53:22.650Z] assigned listening specs for emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}]},"metadata":{"message":"assigned listening specs for emulators"}}
+[debug] [2023-08-31T14:53:22.655Z] [hub] writing locator at /tmp/hub-clone-5c555.json
+[debug] [2023-08-31T14:53:22.668Z] [functions] Functions Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-31T14:53:22.668Z] [eventarc] Eventarc Emulator only supports listening on one address (127.0.0.1). Not listening on ::1
+[debug] [2023-08-31T14:53:22.669Z] late-assigned ports for functions and eventarc emulators {"user":{"hub":[{"address":"127.0.0.1","family":"IPv4","port":4400},{"address":"::1","family":"IPv6","port":4400}],"ui":[{"address":"127.0.0.1","family":"IPv4","port":4000},{"address":"::1","family":"IPv6","port":4000}],"logging":[{"address":"127.0.0.1","family":"IPv4","port":4500}],"functions":[{"address":"127.0.0.1","family":"IPv4","port":5001}],"eventarc":[{"address":"127.0.0.1","family":"IPv4","port":9299}]},"metadata":{"message":"late-assigned ports for functions and eventarc emulators"}}
 [warn] ⚠  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: auth, firestore, database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mauth, firestore, database, hosting, pubsub, storage\u001b[22m"}}
-[debug] [2023-08-27T18:42:12.759Z] defaultcredentials: writing to file /home/codespace/.config/firebase/ahmednageh09_gmail_com_application_default_credentials.json
-[debug] [2023-08-27T18:42:12.789Z] Setting GAC to /home/codespace/.config/firebase/ahmednageh09_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/codespace/.config/firebase/ahmednageh09_gmail_com_application_default_credentials.json"}}
-[debug] [2023-08-27T18:42:12.792Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-5c555/adminSdkConfig [none]
-[debug] [2023-08-27T18:42:13.157Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-5c555/adminSdkConfig 200
-[debug] [2023-08-27T18:42:13.157Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-5c555/adminSdkConfig {"projectId":"clone-5c555","storageBucket":"clone-5c555.appspot.com"}
-[debug] [2023-08-27T18:42:13.187Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2023-08-27T18:42:13.187Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2023-08-27T18:42:13.187Z] Starting Emulator UI with command {"binary":"node","args":["/home/codespace/.cache/firebase/emulators/ui-v1.11.7/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/codespace/.cache/firebase/emulators/ui-v1.11.7/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[debug] [2023-08-31T14:53:22.670Z] defaultcredentials: writing to file /home/codespace/.config/firebase/ahmednageh09_gmail_com_application_default_credentials.json
+[debug] [2023-08-31T14:53:22.672Z] Setting GAC to /home/codespace/.config/firebase/ahmednageh09_gmail_com_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to /home/codespace/.config/firebase/ahmednageh09_gmail_com_application_default_credentials.json"}}
+[debug] [2023-08-31T14:53:22.674Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/clone-5c555/adminSdkConfig [none]
+[debug] [2023-08-31T14:53:23.003Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/clone-5c555/adminSdkConfig 200
+[debug] [2023-08-31T14:53:23.007Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/clone-5c555/adminSdkConfig {"projectId":"clone-5c555","storageBucket":"clone-5c555.appspot.com"}
+[debug] [2023-08-31T14:53:23.034Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2023-08-31T14:53:23.035Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2023-08-31T14:53:23.035Z] Starting Emulator UI with command {"binary":"node","args":["/home/codespace/.cache/firebase/emulators/ui-v1.11.7/server/server.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"/home/codespace/.cache/firebase/emulators/ui-v1.11.7/server/server.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
 [info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2023-08-27T18:42:13.352Z] Web / API server started at 127.0.0.1:4000
+[debug] [2023-08-31T14:53:23.150Z] Web / API server started at 127.0.0.1:4000
  {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at 127.0.0.1:4000\n"}}
-[debug] [2023-08-27T18:42:13.352Z] Web / API server started at ::1:4000
+[debug] [2023-08-31T14:53:23.151Z] Web / API server started at ::1:4000
  {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at ::1:4000\n"}}
 [info] i  functions: Watching "/workspaces/AmazonClone/amazon/functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"/workspaces/AmazonClone/amazon/functions\" for Cloud Functions..."}}
-[debug] [2023-08-27T18:42:13.453Z] Validating nodejs source
-[debug] [2023-08-27T18:42:14.568Z] > [functions] package.json contents: {
+[debug] [2023-08-31T14:53:23.300Z] Validating nodejs source
+[debug] [2023-08-31T14:53:23.755Z] > [functions] package.json contents: {
   "name": "functions",
   "description": "Cloud Functions for Firebase",
   "scripts": {
@@ -64,15 +61,15 @@
   },
   "private": true
 }
-[debug] [2023-08-27T18:42:14.569Z] Building nodejs source
-[debug] [2023-08-27T18:42:14.569Z] Failed to find version of module node: reached end of search path /workspaces/AmazonClone/amazon/functions/node_modules
+[debug] [2023-08-31T14:53:23.755Z] Building nodejs source
+[debug] [2023-08-31T14:53:23.756Z] Failed to find version of module node: reached end of search path /workspaces/AmazonClone/amazon/functions/node_modules
 [warn] ⚠  functions: Your requested "node" version "18" doesn't match your global version "20". Using node@20 from host. 
 [info] i  functions: Loaded environment variables from .env. 
-[debug] [2023-08-27T18:42:14.577Z] Could not find functions.yaml. Must use http discovery
-[debug] [2023-08-27T18:42:14.581Z] Found firebase-functions binary at '/workspaces/AmazonClone/amazon/functions/node_modules/.bin/firebase-functions'
-[info] Serving at port 8090
+[debug] [2023-08-31T14:53:23.763Z] Could not find functions.yaml. Must use http discovery
+[debug] [2023-08-31T14:53:23.765Z] Found firebase-functions binary at '/workspaces/AmazonClone/amazon/functions/node_modules/.bin/firebase-functions'
+[info] Serving at port 8163
 
-[debug] [2023-08-27T18:42:17.160Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2023-08-31T14:53:24.102Z] Got response from /__/functions.yaml {"endpoints":{"api":{"availableMemoryMb":null,"timeoutSeconds":null,"minInstances":null,"maxInstances":null,"ingressSettings":null,"concurrency":null,"serviceAccountEmail":null,"vpc":null,"platform":"gcfv2","labels":{},"httpsTrigger":{},"entryPoint":"api"}},"specVersion":"v1alpha1","requiredAPIs":[]}
 [info] shutdown requested via /__/quitquitquit
 
 [info] ✔  functions: Loaded functions definitions from source: api. {"metadata":{"emulator":{"name":"functions"},"message":"Loaded functions definitions from source: api."}}
@@ -93,3 +90,12 @@
 
 Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
  
+[debug] [2023-08-31T15:01:39.071Z] Functions emulator received unknown request at path /
+[debug] [2023-08-31T15:01:40.132Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-08-31T15:02:04.439Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-08-31T15:02:05.813Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-08-31T15:02:08.049Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-08-31T15:02:09.729Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-08-31T15:05:19.977Z] Functions emulator received unknown request at path /
+[debug] [2023-08-31T15:05:20.794Z] Functions emulator received unknown request at path /favicon.ico
+[debug] [2023-08-31T15:05:22.371Z] Functions emulator received unknown request at path /

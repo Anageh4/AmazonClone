@@ -16,7 +16,7 @@ app.post("/payment/create", async (req, res) => {
     currency: "usd"});
 
   res.status(201).send({
-    clinetSecret: paymentIntent.client_secret,
+    clientSecret: paymentIntent.client_secret,
   });
 });
 

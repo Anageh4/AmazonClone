@@ -29,9 +29,11 @@ const Orders = () => {
     <div className="orders">
       <h1>Your Orders</h1>
       <div className="orders-order">
-        {orders?.map((order) => (
-          <Order order={order} />
-        ))}
+        {orders.length === 0 ? (
+          <h4>You Have No Orders Yet, Go Make Your Order Now!</h4>
+        ) : (
+          orders.map((order) => <Order order={order} />)
+        )}
       </div>
     </div>
   );

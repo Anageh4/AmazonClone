@@ -28,7 +28,7 @@ const Payment = () => {
     const getClientSecret = async () => {
       const response = await axios({
         method: "post",
-        url: `/payments/create?total=${getBasketTotal(basket) * 100}`,
+        url: `/payment/create?total=${getBasketTotal(basket) * 100}`,
       });
       setClientSecret(response.data.clientSecret);
       return response;
@@ -59,6 +59,7 @@ const Payment = () => {
         navigate("/orders", { replace: true });
       });
   };
+  
   const handleChange = (e) => {
     setDisabled(e.empty);
     setError(error ? error.message : "");
@@ -103,7 +104,7 @@ const Payment = () => {
           <h3>Payment Method</h3>
           <div className="payment-details">
             <form onSubmit={handleSubmit}>
-              <CardElement onChange={handleChange} />
+              <CardElement onChange={handleChange}/>
               <div className="payment-priceContainer">
                 <h3>Order Total : {orderTotal.format()}</h3>
                 <button
